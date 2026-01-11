@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHAI TOP UP - Free Fire Diamond Top Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><i class="fas fa-fire"></i> BHAI TOP UP</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#diamonds">Diamonds</a>
+                    <a href="#weekly">Weekly/Monthly</a>
+                    <a href="#airdrop">AirDrop</a>
+                    <a href="#evo">Evo Access</a>
+                    <a href="#orders">Orders</a>
+                    <a href="#contact">Contact</a>
+                    <a href="admin.html" class="admin-btn"><i class="fas fa-lock"></i> Admin</a>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Free Fire Diamond Top Up</h2>
+                <p>Instant Delivery • 24/7 Service • Best Prices in Bangladesh</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> Contact: 01748320647 (WhatsApp)</p>
+                    <p><i class="fas fa-wallet"></i> Payment: 01540651159 (Bkash/Nagad)</p>
+                </div>
+                <a href="#diamonds" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diamond Packages -->
+    <section class="packages" id="diamonds">
+        <div class="container">
+            <h2 class="section-title">Diamond Packages</h2>
+            <div class="packages-grid">
+                <!-- Diamond packages will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly/Monthly Packages -->
+    <section class="packages" id="weekly">
+        <div class="container">
+            <h2 class="section-title">Weekly & Monthly Packages</h2>
+            <div class="packages-grid weekly-grid">
+                <!-- Weekly/Monthly packages will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- AirDrop Packages -->
+    <section class="packages" id="airdrop">
+        <div class="container">
+            <h2 class="section-title">AirDrop Packages</h2>
+            <div class="packages-grid airdrop-grid">
+                <!-- AirDrop packages will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Evo Access Packages -->
+    <section class="packages" id="evo">
+        <div class="container">
+            <h2 class="section-title">Evo Access Packages</h2>
+            <div class="packages-grid evo-grid">
+                <!-- Evo Access packages will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form" id="order">
+        <div class="container">
+            <h2 class="section-title">Place Your Order</h2>
+            <div class="form-container">
+                <form id="topupForm">
+                    <div class="form-group">
+                        <label for="package">Select Package:</label>
+                        <select id="package" required>
+                            <option value="">Select a package</option>
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price (BDT):</label>
+                        <input type="text" id="price" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="uid">Free Fire UID:</label>
+                        <input type="text" id="uid" placeholder="Enter your Free Fire UID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number:</label>
+                        <input type="text" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="transaction">Transaction ID:</label>
+                        <input type="text" id="transaction" placeholder="Enter Bkash/Nagad Transaction ID" required>
+                    </div>
+                    <div class="payment-info">
+                        <h3><i class="fas fa-info-circle"></i> Payment Information</h3>
+                        <p>Send money to: <strong>01540651159</strong> (Bkash/Nagad)</p>
+                        <p>After payment, fill this form with the transaction ID</p>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Orders -->
+    <section class="recent-orders" id="orders">
+        <div class="container">
+            <h2 class="section-title">Recent Orders</h2>
+            <div class="orders-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Package</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersTableBody">
+                        <!-- Orders will be loaded by JavaScript -->
+                    </tbody>
+                </table>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3 id="totalOrders">0</h3>
+                        <p>Total Orders</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="pendingOrders">0</h3>
+                        <p>Pending</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="completedOrders">0</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>01748320647</p>
+                    <a href="https://wa.me/8801748320647" class="btn" target="_blank">Message on WhatsApp</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>01748320647</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Payment Number</h3>
+                    <p>01540651159 (Bkash/Nagad)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-fire"></i> BHAI TOP UP</h2>
+                    <p>Instant Free Fire Diamond Top Up Service</p>
+                </div>
+                <div class="footer-info">
+                    <p><i class="fas fa-clock"></i> 24/7 Service Available</p>
+                    <p><i class="fas fa-bolt"></i> Instant Delivery</p>
+                    <p><i class="fas fa-shield-alt"></i> 100% Secure</p>
+                </div>
+                <div class="copyright">
+                    <p>© 2026 BHAI TOP UP. All rights reserved.</p>
+                    <p class="developer">Developed by RIPON HASAN</p>
+                    <p class="created">Created in 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your order has been received. We'll process it within 10-15 minutes.</p>
+            <p>You'll get a confirmation on WhatsApp.</p>
+            <button class="btn close-btn">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
